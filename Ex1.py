@@ -25,7 +25,7 @@ if __name__ == '__main__':
     venda_menor = vendas[0]
     venda_maior = vendas[0]
 
-    for x in range(0, len(vendas)):
+    for x in range(1, len(vendas)):
         if vendas[x] > venda_maior:
             venda_maior = vendas[x]
         if vendas[x] < venda_menor:

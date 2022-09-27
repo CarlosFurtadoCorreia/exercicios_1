@@ -31,7 +31,7 @@ if __name__ == '__main__':
     numeros = list()
     inicio = int(input('Inicio: '))
     fim = int(input('Fim: '))
-    ver = input('Ver apenas pares, impares ou primos? [1, 2, 3] ')
+    ver = input('1 - Pares, 2 - Impares, 3 - Primos')
 
     pares = list()
     impares = list()
@@ -43,7 +43,6 @@ if __name__ == '__main__':
     print(numeros)
 
     for x in range(0, fim + 1):
-
         if numeros[x] % 2 == 0:
             pares.append(numeros[x])
         else:

@@ -18,7 +18,7 @@ if __name__ == '__main__':
         fl = frase.split(' ')
         print(f'A frase contém {len(fl)} palavras.')
         cont_vogais = 0
-        vogais = 'aeiou'
+        vogais = 'aeiouAEIOU'
         for v in frase:
             if v in vogais:
                 cont_vogais += 1
@@ -28,12 +28,14 @@ if __name__ == '__main__':
         cont_maiusculas = 0
         cont_minusculas = 0
         for m in frase:
-            if m in maiusculas:
-                cont_maiusculas += 1
+            if m != ' ':
+                if m in maiusculas:
+                    cont_maiusculas += 1
         print(f'A sua frase tem {cont_maiusculas} maiusculas.')
         for n in frase:
-            if n in minusculas:
-                cont_minusculas += 1
+            if n != ' ':
+                if n in minusculas:
+                    cont_minusculas += 1
         print(f'A sua frase tem {cont_minusculas} minusculas.')
         nums = '0123456789'
         cont_nums = 0
